@@ -1,0 +1,36 @@
+{
+    "manifest_version": 2,
+    "name": "CyberSpork",
+    "author": "CauseImCloudy",
+    "permissions": [
+        "activeTab",
+        "clipboardWrite",
+        "contextMenus",
+        "tabs",
+        "storage",
+        "background",
+        "clipboardRead"
+      ],
+    "description": "Ever wanted to take CyberChef on the go? Well now you can, plus more!",
+    "version": "0.0.1",
+    "icons": {
+        "16": "icons/logo_16.png",
+        "19": "icons/logo_19.png",
+        "48": "icons/logo_48.png",
+        "96": "icons/logo_96.png",
+        "128": "icons/logo_128.png"
+    },
+    "options_page": "options/settings.html",
+    "background": {
+        "scripts": ["background.js"],
+        "default_popup": "cyberspork.htm",
+        "persistent": true
+    },
+    "content_scripts": [
+        {
+            "matches": ["<all_urls>"],
+            "js": ["content.js"]
+    }],
+    "offline_enabled": true
+        
+}

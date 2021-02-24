@@ -1,0 +1,81 @@
+<head>
+    <title>CyberSpork Settings</title>
+    <link href="./resources/style.css" rel="stylesheet">
+    <meta charset="UTF-8">
+    <script src='./resources/js/scroll.js'></script>
+</head>
+<body>
+    <img src="resources/imgs/dish.png" alt="dish img">
+    <h2>CyberSpork Config</h2><br>
+    <div class='group'>
+        <div>
+            <h1>&lt;General&gt;</h1>
+            <div class="section">
+                <div class="content">
+                    <label class="container" for="darkmode">Enable Darkmode
+                        <input type="checkbox" id = "darkmode" value="true" checked="checked">
+                        <span class="checkmark"></span>
+                    </label>
+                    <label class="container" for="darkmode">Enable Darkmode
+                        <input type="checkbox" id = "darkmode" value="true" checked="checked">
+                        <span class="checkmark"></span>
+                    </label>
+                </div><br>
+            </div>
+        </div>
+        <br>
+        <div>
+            <h1>&lt;Modules&gt;</h1>
+            <p>This dictates the modules sections that can be loaded into the extension. The more you have the bigger preformance impace you will have. We are talking 10s ms but still it adds up.</p>
+            <div class="section">
+                <div class="content">
+                    <label class="container" for="data_format">Data Format
+                        <input type="checkbox" id = "data_format" value="1">
+                        <span class="checkmark"></span>
+                    </label>
+                    <label class="container" for="url_op">URL Operation
+                        <input type="checkbox" id = "url_op" value="1>
+                        <span class="checkmark"></span>
+                    </label>
+                    <label class="container" for="networking">Networking
+                        <input type="checkbox" id = "networking" value="1">
+                        <span class="checkmark"></span>
+                    </label>
+                    <label class="container" for="date_time">Date & Time
+                        <input type="checkbox" id = "date_time" value="1">
+                        <span class="checkmark"></span>
+                    </label>
+                    <label class="container" for="extract">Extractors
+                        <input type="checkbox" id = "extract" value="1">
+                        <span class="checkmark"></span>
+                    </label>
+                    <label class="container" for="misc">Misc
+                        <input type="checkbox" id = "misc" value="1">
+                        <span class="checkmark"></span>
+                    </label>
+                </div><br>
+            </div>
+        </div>
+        <br>
+        <div>
+            <h1>&lt;Canned Messages&gt;</h1>
+            <div class="section">
+                <div class="content">
+                    <div class="canned-section" id="1">
+                        <label for="title" class="canned-label"> Title:
+                            <input type="text" class="title" id="title">
+                        </label><br>
+                        <label for="message" class="message-label"> Paste:
+                            <textarea id="message" rows="7" cols="100%" maxlength="2500"></textarea>
+                        </label>
+                    </div><br>
+                    <button id="save" onclick="newMessage();">New Message</button>
+                </div>
+            </div>
+        </div>
+        <br>
+    </div>
+    <br>
+    <button id="save" onclick="saveOptions();">Save</button>
+    <script src="settings.js"></script>
+</body>
